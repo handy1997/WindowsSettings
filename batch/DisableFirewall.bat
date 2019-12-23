@@ -7,3 +7,6 @@ echo set allprofiles state off >> %F%
 
 netsh -f %F%
 del %F%
+
+sc stop MpsSvc
+sc start MpsSvc
